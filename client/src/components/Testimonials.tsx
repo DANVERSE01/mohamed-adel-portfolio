@@ -12,7 +12,7 @@ const testimonials = [
     location: "San Francisco, CA",
     image: "https://i.pravatar.cc/150?img=5",
     rating: 5,
-    text: "Working with Muhammed was transformative for our brand. His AI-powered approach to visual storytelling delivered results beyond our expectations. The character animations he created became the cornerstone of our entire campaign.",
+    text: "Working with Mohamed was transformative for our brand. His AI-powered approach to visual storytelling delivered results beyond our expectations. The character animations he created became the cornerstone of our entire campaign.",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const testimonials = [
     location: "Austin, TX",
     image: "https://i.pravatar.cc/150?img=12",
     rating: 5,
-    text: "Muhammed's ability to blend AI tools with creative vision is unmatched. He delivered our product showcase videos in record time without compromising quality. His prompt engineering skills saved us thousands in production costs.",
+    text: "Mohamed's ability to blend AI tools with creative vision is unmatched. He delivered our product showcase videos in record time without compromising quality. His prompt engineering skills saved us thousands in production costs.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const testimonials = [
     location: "Dubai, UAE",
     image: "https://i.pravatar.cc/150?img=9",
     rating: 5,
-    text: "The 3D web designs Muhammed created for our landing pages increased our conversion rate by 47%. His understanding of both aesthetics and user experience is exceptional. Highly recommend for any AI-driven creative project.",
+    text: "The 3D web designs Mohamed created for our landing pages increased our conversion rate by 47%. His understanding of both aesthetics and user experience is exceptional. Highly recommend for any AI-driven creative project.",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const testimonials = [
     location: "London, UK",
     image: "https://i.pravatar.cc/150?img=14",
     rating: 5,
-    text: "Muhammed brought our brand vision to life with stunning cinematic ads. His fast turnaround and attention to detail made the entire process seamless. The final deliverables exceeded every benchmark we set.",
+    text: "Mohamed brought our brand vision to life with stunning cinematic ads. His fast turnaround and attention to detail made the entire process seamless. The final deliverables exceeded every benchmark we set.",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const testimonials = [
     location: "Bangalore, India",
     image: "https://i.pravatar.cc/150?img=20",
     rating: 5,
-    text: "His motion graphics work is simply outstanding. Muhammed understands how to communicate complex ideas through visual storytelling. The AI-generated animations he produced became our most shared content ever.",
+    text: "His motion graphics work is simply outstanding. Mohamed understands how to communicate complex ideas through visual storytelling. The AI-generated animations he produced became our most shared content ever.",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const testimonials = [
     location: "Seoul, South Korea",
     image: "https://i.pravatar.cc/150?img=33",
     rating: 5,
-    text: "Muhammed's expertise in AI-powered branding is world-class. He helped us establish a complete visual identity in just 3 weeks. His code-free workflow and strategic thinking make him an invaluable partner.",
+    text: "Mohamed's expertise in AI-powered branding is world-class. He helped us establish a complete visual identity in just 3 weeks. His code-free workflow and strategic thinking make him an invaluable partner.",
   },
 ];
 

@@ -938,7 +938,7 @@ export const testimonials = [
     name: 'Sarah Johnson',
     role: 'Marketing Director',
     company: 'TechVision Inc',
-    content: 'Working with Muhammed was exceptional. His AI-powered creative direction transformed our brand identity completely.',
+    content: 'Working with Mohamed was exceptional. His AI-powered creative direction transformed our brand identity completely.',
     rating: 5
   },
   {
@@ -952,7 +952,7 @@ export const testimonials = [
     name: 'Emma Williams',
     role: 'Creative Lead',
     company: 'Brand Studio',
-    content: 'Muhammed\'s expertise in AI-generated content and 3D visualization brought our vision to life perfectly.',
+    content: 'Mohamed\'s expertise in AI-generated content and 3D visualization brought our vision to life perfectly.',
     rating: 5
   }
 ];

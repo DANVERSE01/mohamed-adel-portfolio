@@ -63,6 +63,7 @@ export default function Navigation() {
               size="icon"
               onClick={toggleTheme}
               className="mr-2"
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             >
               {theme === "dark" ? (
                 <Sun className="h-5 w-5" />
@@ -79,6 +80,7 @@ export default function Navigation() {
                       ? "bg-primary text-primary-foreground"
                       : "text-foreground hover:text-primary"
                   }`}
+                  aria-current={location === item.href ? "page" : undefined}
                 >
                   {item.label}
                   {location === item.href && (
@@ -99,6 +101,8 @@ export default function Navigation() {
             size="icon"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />
