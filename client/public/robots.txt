@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mohamed-adel-portfolio.netlify.app/sitemap.xml
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/

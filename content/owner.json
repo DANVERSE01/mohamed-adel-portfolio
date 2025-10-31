@@ -1,0 +1,31 @@
+{
+  "fullName": "Muhammed Adel",
+  "title": "Creative Director & AI Strategist",
+  "location": "Alexandria, Egypt",
+  "email": "mohamed.adel1160@icloud.com",
+  "instagram": "https://instagram.com/muhammedd_adel",
+  "headshotUrl": "/images/headshot.jpg",
+  "bio": "Creative director leveraging AI to build global visual identities. Blends strategic thinking with next-gen tools for image, video, and text generation. Operates fast, code-free, and with precision.",
+  "expertise": [
+    "AI-powered Branding",
+    "Cinematic Ad Directing",
+    "Prompt Engineering (image + text + visual + video)",
+    "3D Web Design (Landing Pages + Product UI)",
+    "Creative Strategy for Global Markets",
+    "Ultra-Realistic Visual Generation",
+    "Rapid Monetization Systems (focused on MENA region)"
+  ],
+  "awards": [
+    {
+      "title": "Invited to AI for Good Sandbox – 2025",
+      "year": "2025",
+      "description": "Selected for participation in the AI for Good Sandbox initiative, showcasing innovative applications of AI in creative industries."
+    },
+    {
+      "title": "Featured in global showcases for Gen-4 creative AI tools",
+      "year": "2024",
+      "description": "Work featured in international exhibitions highlighting cutting-edge generative AI applications in visual content creation."
+    }
+  ]
+}
+

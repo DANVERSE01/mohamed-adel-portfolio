@@ -1,0 +1,75 @@
+{
+  "services": [
+    {
+      "id": "ai-branding",
+      "name": "AI-Powered Branding",
+      "outcome": "Distinct identity systems that scale across media.",
+      "description": "Develop comprehensive brand identities using AI-powered visual generation. Create cohesive design systems that maintain consistency across digital, print, and motion media while enabling rapid iteration and market testing.",
+      "features": [
+        "Visual identity development",
+        "Brand guidelines and asset libraries",
+        "Multi-format design systems",
+        "Rapid concept exploration",
+        "Scalable brand applications"
+      ],
+      "icon": "palette"
+    },
+    {
+      "id": "cinematic-directing",
+      "name": "Cinematic Ad Directing",
+      "outcome": "High-impact spots tailored for social and OOH.",
+      "description": "Direct and produce cinematic advertising content optimized for social media and out-of-home placements. Combine AI-generated visuals with strategic storytelling to create memorable brand moments that drive engagement and conversion.",
+      "features": [
+        "Social media video campaigns",
+        "Out-of-home creative",
+        "Motion graphics and animation",
+        "Storyboarding and concept development",
+        "Platform-specific optimization"
+      ],
+      "icon": "video"
+    },
+    {
+      "id": "3d-web-design",
+      "name": "3D Web Design",
+      "outcome": "Fast, responsive, and immersive product sites.",
+      "description": "Build cutting-edge web experiences that combine 3D graphics, smooth animations, and responsive design. Create product showcases and landing pages that captivate audiences while maintaining exceptional performance and accessibility.",
+      "features": [
+        "Three.js interactive experiences",
+        "Responsive 3D product showcases",
+        "Performance-optimized animations",
+        "Mobile-first design approach",
+        "Accessibility compliance"
+      ],
+      "icon": "cube"
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "outcome": "Reusable libraries for image, video, and script.",
+      "description": "Develop sophisticated prompt libraries and workflows that enable consistent, high-quality AI-generated content. Build custom systems for image generation, video synthesis, and copywriting that align with brand guidelines and creative objectives.",
+      "features": [
+        "Custom prompt library development",
+        "Multi-modal generation workflows",
+        "Brand-aligned AI outputs",
+        "Quality control frameworks",
+        "Training and documentation"
+      ],
+      "icon": "code"
+    },
+    {
+      "id": "monetization-systems",
+      "name": "Monetization Systems",
+      "outcome": "Landing pages with QR, InstaPay, and UGC loops.",
+      "description": "Design and implement complete monetization ecosystems for digital products and services. Build landing pages with integrated payment systems, QR code generation, and user-generated content loops optimized for the MENA market.",
+      "features": [
+        "Conversion-optimized landing pages",
+        "Payment integration (InstaPay, QR codes)",
+        "User-generated content systems",
+        "Analytics and optimization",
+        "MENA market specialization"
+      ],
+      "icon": "trending-up"
+    }
+  ]
+}
+

@@ -1,0 +1,79 @@
+{
+  "name": "Muhammed Adel Portfolio",
+  "version": "1.0.0",
+  "colors": {
+    "background": "#0B0F14",
+    "glass": "rgba(255, 255, 255, 0.06)",
+    "stroke": "rgba(255, 255, 255, 0.14)",
+    "accentPrimary": "#8A2BE2",
+    "accentSecondary": "#00C2C7",
+    "textPrimary": "#E6E9EF",
+    "textSecondary": "#A7B0C0"
+  },
+  "typography": {
+    "display": {
+      "family": "Sora, Inter Tight, system-ui, sans-serif",
+      "weights": [400, 500, 600, 700]
+    },
+    "body": {
+      "family": "Inter, Manrope, system-ui, sans-serif",
+      "weights": [400, 500, 600]
+    },
+    "scale": {
+      "xs": "clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem)",
+      "sm": "clamp(0.875rem, 0.8rem + 0.375vw, 1rem)",
+      "base": "clamp(1rem, 0.9rem + 0.5vw, 1.125rem)",
+      "lg": "clamp(1.125rem, 1rem + 0.625vw, 1.25rem)",
+      "xl": "clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem)",
+      "2xl": "clamp(1.5rem, 1.3rem + 1vw, 2rem)",
+      "3xl": "clamp(1.875rem, 1.6rem + 1.375vw, 2.5rem)",
+      "4xl": "clamp(2.25rem, 1.9rem + 1.75vw, 3rem)",
+      "5xl": "clamp(3rem, 2.5rem + 2.5vw, 4rem)"
+    }
+  },
+  "spacing": {
+    "xs": "0.5rem",
+    "sm": "1rem",
+    "md": "1.5rem",
+    "lg": "2rem",
+    "xl": "3rem",
+    "2xl": "4rem",
+    "3xl": "6rem"
+  },
+  "borderRadius": {
+    "sm": "0.375rem",
+    "md": "0.5rem",
+    "lg": "0.75rem",
+    "xl": "1rem",
+    "2xl": "1.5rem",
+    "full": "9999px"
+  },
+  "effects": {
+    "blur": {
+      "sm": "4px",
+      "md": "12px",
+      "lg": "20px"
+    },
+    "shadow": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+      "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+      "glow": "0 0 20px rgba(138, 43, 226, 0.3)"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "300ms",
+      "slow": "500ms"
+    },
+    "easing": {
+      "ease": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  }
+}
+
