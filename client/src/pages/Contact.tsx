@@ -3,7 +3,7 @@ import { useState } from "react";
 import GlassCard from "@/components/GlassCard";
 import { Button } from "@/components/ui/button";
 import { OWNER } from "@/const";
-import { Mail, Instagram, MapPin, Send } from "lucide-react";
+import { Mail, Instagram, Send } from "lucide-react";
 import { toast } from "sonner";
 
 export default function Contact() {
@@ -96,23 +96,7 @@ export default function Contact() {
                   </GlassCard>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4, duration: 0.6 }}
-                >
-                  <GlassCard hover={false}>
-                    <div className="p-6">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                        <MapPin className="w-6 h-6 text-primary" />
-                      </div>
-                      <h3 className="font-semibold mb-2">Location</h3>
-                      <p className="text-muted-foreground text-sm">
-                        {OWNER.location}
-                      </p>
-                    </div>
-                  </GlassCard>
-                </motion.div>
+
               </div>
 
               {/* Contact Form */}
