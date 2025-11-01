@@ -7,6 +7,7 @@ import FloatingShapes from "@/components/FloatingShapes";
 import Hero from "@/components/Hero";
 import FeaturedWork from "@/components/FeaturedWork";
 import Testimonials from "@/components/Testimonials";
+import CTAButton from "@/components/CTAButton";
 import { statistics, testimonials } from "@/data/portfolio";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <FloatingShapes />
       {/* Hero Section */}
       <Hero />
+      <CTAButton />
 
       {/* Statistics Section */}
       <section className="py-20 px-4">
@@ -121,6 +123,9 @@ export default function Home() {
 
       {/* Featured Work Section */}
       <FeaturedWork />
+      <CTAButton />
+
+      <CTAButton />
 
       {/* Why Choose Me Section */}
       <section className="py-20 px-4">
@@ -197,6 +202,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonials />
+      <CTAButton />
 
       {/* CTA Section */}
       <section className="py-20 px-4">
@@ -209,7 +215,7 @@ export default function Home() {
           >
             <GlassCard className="p-12 text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Ready to Bring Your Vision to Life?
+                Get Your Free Strategy Session
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Let's create something extraordinary together with AI-powered creativity and cinematic excellence.

@@ -44,7 +44,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <img 
+            <img loading="lazy" 
               src="/logo-ma-arabic-v2.png" 
               alt="Mohamed Adel Logo" 
               className="h-8 md:h-10 w-auto transition-transform group-hover:scale-110"

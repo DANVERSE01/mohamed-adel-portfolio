@@ -10,8 +10,8 @@ import { Button } from "./ui/button";
 const featuredProjects = [
   {
     id: 1,
-    title: "AI Character Animation",
-    category: "AI Character Animation",
+    title: "Quantum Awakening",
+    category: "Cinematic AI",
     type: "video" as const,
     media: "/ai-character-animation.mp4",
     featured: true,
@@ -19,26 +19,17 @@ const featuredProjects = [
   },
   {
     id: 2,
-    title: "3D Product Showcase",
-    category: "3D Product Visualization",
+    title: "Jacob & Co × Bugatti Chiron",
+    category: "Luxury Timepieces",
     type: "video" as const,
     media: "/3d-product-showcase.mp4",
     featured: true,
     size: "medium" as const, // 1/3 width
   },
   {
-    id: 3,
-    title: "Motion Graphics",
-    category: "Motion Graphics",
-    type: "video" as const,
-    media: "/motion-graphics.mp4",
-    featured: true,
-    size: "medium" as const, // 1/3 width
-  },
-  {
     id: 4,
-    title: "Hero Showcase",
-    category: "Cinematic Ad Directing",
+    title: "Creative Command Center",
+    category: "Behind The Scenes",
     type: "video" as const,
     media: "/hero-video-1.mp4",
     featured: true,
@@ -73,7 +64,7 @@ export default function FeaturedWork() {
         {/* Asymmetric Masonry Grid */}
         <div className="space-y-8">
           {/* Row 1: Large Left + Medium Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -93,25 +84,15 @@ export default function FeaturedWork() {
             </motion.div>
           </div>
 
-          {/* Row 2: Medium Left + Large Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Row 2: Large Full Width */}
+          <div className="grid grid-cols-1 gap-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="lg:col-span-1"
             >
-              <ProjectCard project={featuredProjects[2]} size="medium" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="lg:col-span-2"
-            >
-              <ProjectCard project={featuredProjects[3]} size="large" />
+              <ProjectCard project={featuredProjects[2]} size="large" />
             </motion.div>
           </div>
         </div>

@@ -47,6 +47,7 @@ export function HeroBackground() {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'brightness(0.4)' }}
         poster="/hero-poster.jpg"
+        autoPlay
         muted
         loop
         playsInline

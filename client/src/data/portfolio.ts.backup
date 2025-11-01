@@ -1,5 +1,5 @@
 // Portfolio Data - Auto-generated from analysis
-// Total: 85 assets (15 videos + 70 images) - Updated after removing duplicates
+// Total: 101 assets (22 videos + 79 images)
 
 export interface PortfolioAsset {
   id: string;
@@ -27,7 +27,7 @@ export const CATEGORIES = [
 export type Category = typeof CATEGORIES[number];
 
 export const portfolioAssets: PortfolioAsset[] = [
-  // AI Character Animation Videos (1)
+  // AI Character Animation Videos (5)
   {
     id: 'vid-001',
     type: 'video',
@@ -35,6 +35,38 @@ export const portfolioAssets: PortfolioAsset[] = [
     title: 'AI Character Animation 01',
     caption: 'Cinematic AI character animation with realistic motion',
     file: '/portfolio/videos/higgsfield-b68d7866-fc45-4be7-911f-cf95dd322626.mp4'
+  },
+  {
+    id: 'vid-002',
+    type: 'video',
+    category: 'AI Character Animation',
+    title: 'AI Character Animation 02',
+    caption: 'AI-powered character movement and expression',
+    file: '/portfolio/videos/higgsfield-dfe25a0a-9e95-4009-8eaf-435061fe2111.mp4'
+  },
+  {
+    id: 'vid-003',
+    type: 'video',
+    category: 'AI Character Animation',
+    title: 'AI Character Animation 03',
+    caption: 'Dynamic AI character animation sequence',
+    file: '/portfolio/videos/higgsfield-b8bddb86-3943-4de4-8961-19e353a73034.mp4'
+  },
+  {
+    id: 'vid-004',
+    type: 'video',
+    category: 'AI Character Animation',
+    title: 'AI Character Animation 04',
+    caption: 'Expressive AI character performance',
+    file: '/portfolio/videos/higgsfield-cee6e128-5783-49c5-945d-9270f8860c67.mp4'
+  },
+  {
+    id: 'vid-005',
+    type: 'video',
+    category: 'AI Character Animation',
+    title: 'AI Character Animation 05',
+    caption: 'AI-generated character storytelling',
+    file: '/portfolio/videos/higgsfield-ffc56719-e7af-4416-add7-13eb8359f69c.mp4'
   },
 
   // Cinematic Video Production (8)
@@ -79,6 +111,14 @@ export const portfolioAssets: PortfolioAsset[] = [
     file: '/portfolio/videos/57CF37D9-A898-4B3B-916B-51B36688E319.mp4'
   },
   {
+    id: 'vid-011',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Widescreen Cinematic',
+    caption: 'Widescreen cinematic storytelling',
+    file: '/portfolio/videos/pasted_file_gcwdfq_1104aaab-7c75-4b76-8959-6ea7697f37a6.mp4'
+  },
+  {
     id: 'vid-012',
     type: 'video',
     category: 'Cinematic Video Production',
@@ -95,7 +135,7 @@ export const portfolioAssets: PortfolioAsset[] = [
     file: '/portfolio/videos/download(78).mp4'
   },
 
-  // AI Video Generation (1)
+  // AI Video Generation (3)
   {
     id: 'vid-014',
     type: 'video',
@@ -103,6 +143,22 @@ export const portfolioAssets: PortfolioAsset[] = [
     title: 'Grok AI Video',
     caption: 'Grok AI video generation showcase',
     file: '/portfolio/videos/Grok-Video-DBC62DD1-A7E2-4158-A05A-A5149EE85F98.mov'
+  },
+  {
+    id: 'vid-015',
+    type: 'video',
+    category: 'AI Video Generation',
+    title: 'Gemini AI Creation',
+    caption: 'Gemini AI video creation',
+    file: '/portfolio/videos/gemini_generated_video_3441220F.mp4'
+  },
+  {
+    id: 'vid-016',
+    type: 'video',
+    category: 'AI Video Generation',
+    title: 'AI Video Synthesis',
+    caption: 'AI-powered video synthesis',
+    file: '/portfolio/videos/10142F07-C09B-4695-03F6-017FD0BCD934.mp4'
   },
 
   // Product Visualization Videos (2)
@@ -321,12 +377,84 @@ export const portfolioAssets: PortfolioAsset[] = [
     file: '/portfolio/images/246C3F28-F5BE-461A-9848-979597758E0B.png'
   },
   {
+    id: 'img-021',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Logo Variations',
+    caption: 'Logo variations and applications',
+    file: '/portfolio/images/03E27900-6240-4040-AFAC-DBEF95BA10C8.png'
+  },
+  {
     id: 'img-022',
     type: 'image',
     category: 'Brand Identity & Logo Design',
     title: 'Brand Identity 02',
     caption: 'Brand identity design system',
     file: '/portfolio/images/1D776E9B-7E64-4C3E-BCB2-CE1E09187247.png'
+  },
+  {
+    id: 'img-023',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Creative Logo Design',
+    caption: 'Creative logo design',
+    file: '/portfolio/images/IMG_9082.png'
+  },
+  {
+    id: 'img-024',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Brand Identity Presentation',
+    caption: 'Brand identity presentation',
+    file: '/portfolio/images/6081E10C-826E-4396-835F-3ECE3BB2F6A5.png'
+  },
+  {
+    id: 'img-025',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Innovative Logo',
+    caption: 'Innovative logo concept',
+    file: '/portfolio/images/335EB6CA-6E37-42E3-B26F-D79DA72577B7.png'
+  },
+  {
+    id: 'img-026',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Brand Guidelines 02',
+    caption: 'Brand guidelines documentation',
+    file: '/portfolio/images/F68E0728-7C5F-4B91-AACE-9F911F9A7399.png'
+  },
+  {
+    id: 'img-027',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Visual Identity System',
+    caption: 'Visual identity system',
+    file: '/portfolio/images/90B7F1E2-C869-4A74-A145-C175294562F9.png'
+  },
+  {
+    id: 'img-028',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Brand Design Concept',
+    caption: 'Brand design concept',
+    file: '/portfolio/images/IMG_8910.png'
+  },
+  {
+    id: 'img-029',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Professional Logo',
+    caption: 'Professional logo design',
+    file: '/portfolio/images/56E8CCEA-C48A-41F2-9D49-B2ACA88A884A.png'
+  },
+  {
+    id: 'img-030',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Brand Identity Showcase',
+    caption: 'Brand identity showcase',
+    file: '/portfolio/images/311EAF0A-B821-43C2-BF18-E828B5421DA3.png'
   },
   {
     id: 'img-031',
