@@ -3,36 +3,41 @@ import { Sparkles, Video, Palette, Box, Wand2, Film } from "lucide-react";
 
 export const ONE_YEAR_MS = 1000 * 60 * 60 * 24 * 365;
 
-export const APP_TITLE = "Mohamed Adel - Creative Director & AI Strategist";
+export const APP_TITLE = "DANVERSE - Global AI-Powered Creative Studio";
 export const APP_LOGO = "/images/headshot.jpg";
 
 export const OWNER = {
-  fullName: "Mohamed Adel",
-  title: "Creative Director & AI Strategist",
-  location: "Alexandria, Egypt",
-  email: "mohamed.adel1160@icloud.com",
-  instagram: "https://instagram.com/muhammedd_adel",
-  headshotUrl: "/images/headshot.jpg",
-  bio: "Creative director leveraging AI to build global visual identities. Blends strategic thinking with next-gen tools for image, video, and text generation. Operates fast, code-free, and with precision.",
+  fullName: "DANVERSE",
+  title: "Global AI-Powered Creative Studio",
+  location: "Worldwide",
+  email: "hello@danverse.ai",
+  instagram: "https://instagram.com/danverse.ai",
+  headshotUrl: "/images/danverse-logo.png",
+  bio: "World-class creative studio pushing the boundaries of AI-powered visual storytelling. We craft cinematic experiences, interactive 3D worlds, and global brand narratives that set new industry standards.",
   expertise: [
-    "AI-powered Branding",
-    "Cinematic Ad Directing",
-    "Prompt Engineering (image + text + visual + video)",
-    "3D Web Design (Landing Pages + Product UI)",
-    "Creative Strategy for Global Markets",
-    "Ultra-Realistic Visual Generation",
-    "Rapid Monetization Systems (focused on MENA region)"
+    "Cinematic Production & Storytelling",
+    "Interactive 3D Web Experiences (React Three Fiber)",
+    "AI-Powered Brand Development",
+    "Product Visualization & Animation",
+    "Beauty & Fashion Campaigns",
+    "Global Creative Strategy",
+    "Next-Gen Visual Innovation"
   ],
   awards: [
     {
-      title: "Invited to AI for Good Sandbox – 2025",
+      title: "Industry Recognition for 3D Innovation",
       year: "2025",
-      description: "Selected for participation in the AI for Good Sandbox initiative, showcasing innovative applications of AI in creative industries."
+      description: "Recognized for pushing boundaries in interactive 3D web experiences and cinematic AI-powered production."
     },
     {
-      title: "Featured in global showcases for Gen-4 creative AI tools",
+      title: "Featured in Global Creative Showcases",
       year: "2024",
-      description: "Work featured in international exhibitions highlighting cutting-edge generative AI applications in visual content creation."
+      description: "Portfolio featured in international exhibitions for next-generation visual storytelling and brand innovation."
+    },
+    {
+      title: "Beauty Campaign Excellence",
+      year: "2024",
+      description: "Awarded for outstanding work in luxury beauty brand campaigns, including KOVA Cosmetics."
     }
   ]
 };

@@ -4,12 +4,17 @@ import { Link } from "wouter";
 import { Button } from "./ui/button";
 import { OWNER } from "@/const";
 import { HeroBackground } from "./HeroBackground";
+import { Suspense, lazy } from "react";
+
+const Hero3DScene = lazy(() => import("./Hero3DScene"));
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Video Background */}
-      <HeroBackground />
+      {/* 3D Background */}
+      <Suspense fallback={<HeroBackground />}>
+        <Hero3DScene />
+      </Suspense>
 
       {/* Content */}
       <div className="container relative z-20">

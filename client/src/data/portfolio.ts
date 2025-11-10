@@ -1,5 +1,7 @@
-// Portfolio Data - Auto-generated from analysis
-// Total: 85 assets (15 videos + 70 images) - Updated after removing duplicates
+// Professional Portfolio Data - Organized with Descriptive File Names
+// Total: 59 assets (43 images + 16 videos)
+// Last updated: November 10, 2025
+// Added: KOVA Cosmetics Beauty Campaign
 
 export interface PortfolioAsset {
   id: string;
@@ -9,822 +11,647 @@ export interface PortfolioAsset {
   caption: string;
   file: string;
   thumbnail?: string;
+  quality?: 'premium' | 'standard';
 }
 
 export const CATEGORIES = [
+  'Beauty & Cosmetics Campaigns',
   'AI Character Animation',
   'Cinematic Video Production',
   'AI Video Generation',
   'Product Visualization',
-  'Social Media Content',
-  'AI Character Portraits',
+  '3D Visualization & Concept Art',
+  'AI Character Design & 3D',
   'Brand Identity & Logo Design',
-  'Product Visualization & 3D',
-  'Social Media Design',
-  'Concept Art & Fantasy'
+  'Social Media & Content Design',
+  'Product Photography & Food Design',
+  'AI-Generated Art & Illustrations'
 ] as const;
 
 export type Category = typeof CATEGORIES[number];
 
 export const portfolioAssets: PortfolioAsset[] = [
-  // AI Character Animation Videos (1)
+  // ========================================
+  // BEAUTY & COSMETICS CAMPAIGNS
+  // ========================================
+  
+  // KOVA Cosmetics - Premium Beauty Campaign
   {
-    id: 'vid-001',
+    id: 'kova-brand-campaign',
+    type: 'video',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Cosmetics Brand Film',
+    caption: 'Luxury beauty brand campaign showcasing premium mascara line',
+    file: '/portfolio/projects/kova-cosmetics/kova-cosmetics-brand-campaign.mov',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-duo-showcase',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Duo Model Campaign',
+    caption: 'Premium beauty photography featuring dual models with product',
+    file: '/portfolio/projects/kova-cosmetics/kova-duo-models-product-showcase.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-product-hero',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Product Hero Shot',
+    caption: 'Clean product photography with elegant brand presentation',
+    file: '/portfolio/projects/kova-cosmetics/kova-product-hero-shot.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-mascara-lifestyle',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Lifestyle Photography',
+    caption: 'Natural beauty lifestyle shot with product application',
+    file: '/portfolio/projects/kova-cosmetics/kova-model-mascara-lifestyle.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-brow-application',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Brow Application',
+    caption: 'Professional beauty photography showcasing brow mascara technique',
+    file: '/portfolio/projects/kova-cosmetics/kova-brow-mascara-application.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-mascara-closeup',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Mascara Closeup',
+    caption: 'Intimate beauty shot highlighting mascara application',
+    file: '/portfolio/projects/kova-cosmetics/kova-mascara-application-closeup.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'kova-lash-detail',
+    type: 'image',
+    category: 'Beauty & Cosmetics Campaigns',
+    title: 'KOVA Lash Detail',
+    caption: 'Macro beauty photography showcasing lash definition',
+    file: '/portfolio/projects/kova-cosmetics/kova-lash-detail-macro-shot.webp',
+    quality: 'premium'
+  },
+
+  // ========================================
+  // VIDEOS - Cinematic & Professional
+  // ========================================
+  
+  // AI Character Animation (Premium)
+  {
+    id: 'ai-character-animation',
     type: 'video',
     category: 'AI Character Animation',
-    title: 'AI Character Animation 01',
-    caption: 'Cinematic AI character animation with realistic motion',
-    file: '/portfolio/videos/higgsfield-b68d7866-fc45-4be7-911f-cf95dd322626.mp4'
+    title: 'AI Character Animation',
+    caption: 'Realistic AI-generated character animation with smooth motion',
+    file: '/portfolio/videos/ai-character-animation-realistic-motion.mp4',
+    thumbnail: '/portfolio/images/photorealistic-3d-visualization-premium.webp',
+    quality: 'premium'
   },
 
-  // Cinematic Video Production (8)
+  // Product Visualization (Premium)
   {
-    id: 'vid-006',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'Cinematic Ad - Vertical',
-    caption: 'Vertical format cinematic advertisement',
-    file: '/portfolio/videos/84725011-60B3-4EE5-9EFF-E104B514B600-video.mp4'
-  },
-  {
-    id: 'vid-007',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'Professional Cinematic Production',
-    caption: 'Professional cinematic video production',
-    file: '/portfolio/videos/b084c215-f29c-4108-84a1-0acefa9b6351-video.mp4'
-  },
-  {
-    id: 'vid-008',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'AI-Enhanced Commercial',
-    caption: 'AI-enhanced commercial video',
-    file: '/portfolio/videos/235D29FB-07BF-4B82-A36B-68B7BE00B857.mp4'
-  },
-  {
-    id: 'vid-009',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'Dynamic Advertising Content',
-    caption: 'Dynamic advertising video content',
-    file: '/portfolio/videos/9DF35FBC-0A6A-4DCF-9050-D05086B85F71.mp4'
-  },
-  {
-    id: 'vid-010',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'Brand Video Production',
-    caption: 'Engaging brand video production',
-    file: '/portfolio/videos/57CF37D9-A898-4B3B-916B-51B36688E319.mp4'
-  },
-  {
-    id: 'vid-012',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'Premium Cinematic Ad',
-    caption: 'Premium cinematic advertisement',
-    file: '/portfolio/videos/download(77).mp4'
-  },
-  {
-    id: 'vid-013',
-    type: 'video',
-    category: 'Cinematic Video Production',
-    title: 'High-End Commercial',
-    caption: 'High-end commercial production',
-    file: '/portfolio/videos/download(78).mp4'
-  },
-
-  // AI Video Generation (1)
-  {
-    id: 'vid-014',
-    type: 'video',
-    category: 'AI Video Generation',
-    title: 'Grok AI Video',
-    caption: 'Grok AI video generation showcase',
-    file: '/portfolio/videos/Grok-Video-DBC62DD1-A7E2-4158-A05A-A5149EE85F98.mov'
-  },
-
-  // Product Visualization Videos (2)
-  {
-    id: 'vid-017',
+    id: 'product-exploded-view',
     type: 'video',
     category: 'Product Visualization',
     title: 'Product Exploded View',
-    caption: '3D product exploded view animation',
-    file: '/portfolio/videos/pasted_file_DdqVdM_flova_Shot_Exploded_View_Morph_video_202510270717_a9a9d3.mp4'
+    caption: '3D product animation with exploded view morphing',
+    file: '/portfolio/videos/product-exploded-view-3d-animation.mp4',
+    quality: 'premium'
   },
   {
-    id: 'vid-018',
+    id: 'product-showcase',
     type: 'video',
     category: 'Product Visualization',
     title: 'Product Showcase Animation',
-    caption: 'Premium product showcase animation',
-    file: '/portfolio/videos/pasted_file_Ok1kZL_99ab772d-f99a-4da6-9e60-1c474da3cbce.mp4'
+    caption: 'Dynamic 3D product presentation with smooth transitions',
+    file: '/portfolio/videos/product-showcase-dynamic-presentation.mp4',
+    quality: 'premium'
   },
 
-  // Short-Form Social Content (4)
+  // Cinematic Video Production (Premium)
   {
-    id: 'vid-019',
+    id: 'premium-cinematic-ad',
     type: 'video',
-    category: 'Social Media Content',
-    title: 'Social Short 01',
-    caption: 'Engaging short-form social content',
-    file: '/portfolio/videos/CCE2034B-DB02-4BFD-B45C-9880A64CB6E6.mp4'
+    category: 'Cinematic Video Production',
+    title: 'Premium Cinematic Ad',
+    caption: 'Top-tier cinematic advertisement with exceptional production value',
+    file: '/portfolio/videos/premium-cinematic-advertisement-commercial.mp4',
+    quality: 'premium'
   },
   {
-    id: 'vid-020',
+    id: 'luxury-brand-commercial',
     type: 'video',
-    category: 'Social Media Content',
-    title: 'Social Short 02',
-    caption: 'Viral-ready social media video',
-    file: '/portfolio/videos/e773c897-70e8-40e3-ba11-2c9f1b2de616-video.mp4'
+    category: 'Cinematic Video Production',
+    title: 'High-End Commercial',
+    caption: 'Luxury brand commercial with premium aesthetics',
+    file: '/portfolio/videos/luxury-brand-commercial-high-end.mp4',
+    quality: 'premium'
   },
   {
-    id: 'vid-021',
+    id: 'cinematic-brand-film',
     type: 'video',
-    category: 'Social Media Content',
-    title: 'Social Short 03',
-    caption: 'Dynamic social media content',
-    file: '/portfolio/videos/9e03ff1e-6024-4191-9aee-d6df5902eedf-video.mp4'
+    category: 'Cinematic Video Production',
+    title: 'Brand Film Production',
+    caption: 'Cinematic brand film with storytelling focus',
+    file: '/portfolio/videos/cinematic-brand-film-storytelling.mp4',
+    quality: 'premium'
   },
   {
-    id: 'vid-022',
+    id: 'premium-advertising',
     type: 'video',
-    category: 'Social Media Content',
-    title: 'Social Short 04',
-    caption: 'Attention-grabbing social video',
-    file: '/portfolio/videos/CE0A6BB2-3E50-4235-B475-446DDFB6A0A5.mp4'
+    category: 'Cinematic Video Production',
+    title: 'Cinematic Advertisement',
+    caption: 'Premium advertising content with cinematic quality',
+    file: '/portfolio/videos/premium-advertising-content-cinematic.mp4',
+    quality: 'premium'
   },
 
-  // AI Character Portraits (15 images)
+  // Cinematic Video Production (Standard)
   {
-    id: 'img-001',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Luxury Fashion Portrait',
-    caption: 'Luxury fashion portrait with AI-generated elegance',
-    file: '/portfolio/images/IMG_2692.jpeg'
+    id: 'cinematic-production',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Cinematic Brand Film',
+    caption: 'High-end cinematic production with professional color grading',
+    file: '/portfolio/videos/cinematic-production-professional-grading.mp4'
   },
   {
-    id: 'img-002',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Elegant Woman Portrait',
-    caption: 'Elegant woman portrait with cinematic lighting',
-    file: '/portfolio/images/IMG_2482(1).jpeg'
+    id: 'vertical-mobile-ad',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Vertical Format Ad',
+    caption: 'Mobile-optimized vertical video for social platforms',
+    file: '/portfolio/videos/vertical-format-mobile-optimized-ad.mp4'
   },
   {
-    id: 'img-003',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Professional Headshot',
-    caption: 'Professional AI-generated headshot',
-    file: '/portfolio/images/IMG_2483(1).jpeg'
+    id: 'professional-commercial',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Professional Commercial',
+    caption: 'High-quality commercial production',
+    file: '/portfolio/videos/professional-commercial-production-quality.mp4'
   },
   {
-    id: 'img-004',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Cinematic Portrait',
-    caption: 'Cinematic portrait with dramatic lighting',
-    file: '/portfolio/images/IMG_2484(1).jpeg'
+    id: 'dynamic-commercial',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Dynamic Commercial',
+    caption: 'Fast-paced commercial with dynamic editing',
+    file: '/portfolio/videos/dynamic-commercial-fast-paced-editing.mp4'
   },
   {
-    id: 'img-005',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Character Design 01',
-    caption: 'AI character design concept',
-    file: '/portfolio/images/IMG_1960.jpeg'
+    id: 'brand-story',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Brand Story Video',
+    caption: 'Engaging brand narrative with cinematic storytelling',
+    file: '/portfolio/videos/brand-story-narrative-cinematic.mp4'
   },
   {
-    id: 'img-006',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Character Design 02',
-    caption: 'Creative AI character visualization',
-    file: '/portfolio/images/IMG_1961.jpeg'
+    id: 'corporate-brand',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Professional Brand Video',
+    caption: 'Corporate brand video with polished production',
+    file: '/portfolio/videos/corporate-brand-video-polished.mp4'
   },
   {
-    id: 'img-007',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Character Design 03',
-    caption: 'Expressive AI character portrait',
-    file: '/portfolio/images/IMG_1962.jpeg'
-  },
-  {
-    id: 'img-008',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Character Design 04',
-    caption: 'Dynamic AI character concept',
-    file: '/portfolio/images/IMG_1963.jpeg'
-  },
-  {
-    id: 'img-009',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Character Design 05',
-    caption: 'Artistic AI character rendering',
-    file: '/portfolio/images/IMG_1959.jpeg'
-  },
-  {
-    id: 'img-010',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Fashion Portrait 01',
-    caption: 'Fashion-forward AI portrait',
-    file: '/portfolio/images/IMG_7862.jpeg'
-  },
-  {
-    id: 'img-011',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Fashion Portrait 02',
-    caption: 'Stylish AI-generated portrait',
-    file: '/portfolio/images/IMG_7861.jpeg'
-  },
-  {
-    id: 'img-012',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Fashion Portrait 03',
-    caption: 'Contemporary AI fashion portrait',
-    file: '/portfolio/images/IMG_7860.jpeg'
-  },
-  {
-    id: 'img-013',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Beauty Portrait 01',
-    caption: 'Beauty portrait with AI enhancement',
-    file: '/portfolio/images/IMG_7529.jpeg'
-  },
-  {
-    id: 'img-014',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Beauty Portrait 02',
-    caption: 'Glamorous AI-generated portrait',
-    file: '/portfolio/images/IMG_7526.jpeg'
-  },
-  {
-    id: 'img-015',
-    type: 'image',
-    category: 'AI Character Portraits',
-    title: 'Artistic Portrait',
-    caption: 'Artistic AI portrait composition',
-    file: '/portfolio/images/IMG_6692.jpeg'
+    id: 'brand-showcase',
+    type: 'video',
+    category: 'Cinematic Video Production',
+    title: 'Brand Showcase',
+    caption: 'Clean brand presentation with modern aesthetics',
+    file: '/portfolio/videos/brand-showcase-modern-aesthetics.mp4'
   },
 
-  // Brand Identity & Logo Design (18 images) - continuing...
+  // AI Video Generation
   {
-    id: 'img-016',
+    id: 'grok-ai-video',
+    type: 'video',
+    category: 'AI Video Generation',
+    title: 'Grok AI Video',
+    caption: 'AI-generated video using Grok platform',
+    file: '/portfolio/videos/grok-ai-generated-video.mov'
+  },
+
+  // ========================================
+  // IMAGES - 3D & Character Design
+  // ========================================
+
+  // 3D Visualization & Concept Art (Premium)
+  {
+    id: 'photorealistic-3d',
+    type: 'image',
+    category: '3D Visualization & Concept Art',
+    title: 'Premium 3D Render',
+    caption: 'Photo-realistic 3D visualization',
+    file: '/portfolio/images/photorealistic-3d-visualization-premium.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'detailed-3d-character',
+    type: 'image',
+    category: '3D Visualization & Concept Art',
+    title: '3D Character Render 01',
+    caption: 'High-quality 3D character with detailed textures',
+    file: '/portfolio/images/detailed-3d-character-textures.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'cinematic-3d-character',
+    type: 'image',
+    category: '3D Visualization & Concept Art',
+    title: '3D Character Render 02',
+    caption: 'Cinematic 3D character with realistic lighting',
+    file: '/portfolio/images/cinematic-3d-character-realistic-lighting.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'conceptual-3d-art',
+    type: 'image',
+    category: '3D Visualization & Concept Art',
+    title: '3D Concept Design',
+    caption: 'Conceptual 3D artwork with creative vision',
+    file: '/portfolio/images/conceptual-3d-artwork-creative-vision.webp',
+    quality: 'premium'
+  },
+  {
+    id: 'atmospheric-3d-scene',
+    type: 'image',
+    category: '3D Visualization & Concept Art',
+    title: '3D Environment Design',
+    caption: 'Atmospheric 3D scene with mood lighting',
+    file: '/portfolio/images/atmospheric-3d-scene-mood-lighting.webp',
+    quality: 'premium'
+  },
+
+  // AI Character Design & 3D
+  {
+    id: 'tree-spirit-warrior',
+    type: 'image',
+    category: 'AI Character Design & 3D',
+    title: 'Mythical Tree Guardian',
+    caption: 'Cinematic 3D character - Ancient tree spirit warrior with glowing blue eyes',
+    file: '/portfolio/images/ancient-tree-spirit-warrior-glowing-eyes.webp',
+    quality: 'premium'
+  },
+
+  // ========================================
+  // IMAGES - Brand Identity & Design
+  // ========================================
+
+  // Brand Identity & Logo Design
+  {
+    id: 'modern-brand-identity',
+    type: 'image',
+    category: 'Brand Identity & Logo Design',
+    title: 'Untitled Brand Concept',
+    caption: 'Modern brand identity design with geometric elements',
+    file: '/portfolio/images/modern-brand-identity-geometric-elements.webp'
+  },
+  {
+    id: 'complete-visual-identity',
     type: 'image',
     category: 'Brand Identity & Logo Design',
     title: 'Brand Identity System',
-    caption: 'Comprehensive brand identity system',
-    file: '/portfolio/images/1920E3DE-A027-45BA-9336-4D54F3BBD8E2.png'
+    caption: 'Complete visual identity with typography and color palette',
+    file: '/portfolio/images/complete-visual-identity-typography-palette.webp'
   },
   {
-    id: 'img-017',
+    id: 'minimalist-logo',
     type: 'image',
     category: 'Brand Identity & Logo Design',
-    title: 'Logo Design Concept',
-    caption: 'Modern logo design concept',
-    file: '/portfolio/images/ACC4948C-6698-43AE-A72C-BBCC04D8252A.png'
+    title: 'Logo Concept AA',
+    caption: 'Minimalist logo design with clean lines',
+    file: '/portfolio/images/minimalist-logo-clean-lines.webp'
   },
   {
-    id: 'img-018',
+    id: 'contemporary-brand-mark',
     type: 'image',
     category: 'Brand Identity & Logo Design',
-    title: 'Brand Guidelines',
-    caption: 'Professional brand guidelines',
-    file: '/portfolio/images/7E67603F-9A70-4CE2-ACD5-A238F5674F24.png'
+    title: 'Brand Mark Design',
+    caption: 'Contemporary brand mark with modern aesthetics',
+    file: '/portfolio/images/contemporary-brand-mark-modern.webp'
   },
   {
-    id: 'img-019',
+    id: 'brand-presentation',
     type: 'image',
     category: 'Brand Identity & Logo Design',
-    title: 'Visual Identity Package',
-    caption: 'Complete visual identity package',
-    file: '/portfolio/images/4A1AC77C-3C34-4949-89B2-05A56E4F6641.png'
+    title: 'Visual Identity Showcase',
+    caption: 'Professional brand presentation layout',
+    file: '/portfolio/images/professional-brand-presentation-layout.webp'
   },
   {
-    id: 'img-020',
+    id: 'bold-brand-identity',
     type: 'image',
     category: 'Brand Identity & Logo Design',
-    title: 'Brand Assets',
-    caption: 'Brand assets and collateral',
-    file: '/portfolio/images/246C3F28-F5BE-461A-9848-979597758E0B.png'
+    title: 'WQ Brand Identity',
+    caption: 'Bold brand identity with strong visual impact',
+    file: '/portfolio/images/bold-brand-identity-strong-impact.webp'
   },
   {
-    id: 'img-022',
+    id: 'modern-brand-concept',
     type: 'image',
     category: 'Brand Identity & Logo Design',
-    title: 'Brand Identity 02',
-    caption: 'Brand identity design system',
-    file: '/portfolio/images/1D776E9B-7E64-4C3E-BCB2-CE1E09187247.png'
-  },
-  {
-    id: 'img-031',
-    type: 'image',
-    category: 'Brand Identity & Logo Design',
-    title: 'Modern Logo Branding',
-    caption: 'Modern logo branding',
-    file: '/portfolio/images/140A3672-64B5-42B3-BD70-E791B3A6E8FC.png'
-  },
-  {
-    id: 'img-032',
-    type: 'image',
-    category: 'Brand Identity & Logo Design',
-    title: 'Complete Brand Identity',
-    caption: 'Complete brand identity',
-    file: '/portfolio/images/558BD0F9-0B9E-4279-9511-9E1E1A9FDE67.png'
-  },
-  {
-    id: 'img-033',
-    type: 'image',
-    category: 'Brand Identity & Logo Design',
-    title: 'Creative Logo Solution',
-    caption: 'Creative logo solution',
-    file: '/portfolio/images/IMG_7530.png'
+    title: 'WSW Brand Concept',
+    caption: 'Modern brand concept with dynamic elements',
+    file: '/portfolio/images/modern-brand-concept-dynamic-elements.webp'
   },
 
-  // Product Visualization & 3D (11 images)
+  // ========================================
+  // IMAGES - Product & Food Photography
+  // ========================================
+
+  // Product Photography & Food Design
   {
-    id: 'img-034',
+    id: 'gourmet-food-photo',
     type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Professional Product Shot',
-    caption: 'Professional product photography',
-    file: '/portfolio/images/IMG_1453.jpeg'
+    category: 'Product Photography & Food Design',
+    title: 'Gourmet Product Shot',
+    caption: 'High-end food photography with professional lighting',
+    file: '/portfolio/images/gourmet-food-photography-professional-lighting.webp',
+    quality: 'premium'
   },
   {
-    id: 'img-035',
+    id: 'artistic-food-styling',
     type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Premium Product Visual',
-    caption: 'Premium product visualization',
-    file: '/portfolio/images/IMG_1454.jpeg'
+    category: 'Product Photography & Food Design',
+    title: 'Culinary Presentation',
+    caption: 'Artistic food styling and composition',
+    file: '/portfolio/images/artistic-food-styling-composition.webp'
   },
   {
-    id: 'img-036',
+    id: 'clean-product-photo',
     type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Commercial Product Photo',
-    caption: 'Commercial product photography',
-    file: '/portfolio/images/IMG_1455.jpeg'
+    category: 'Product Photography & Food Design',
+    title: 'Product Showcase',
+    caption: 'Clean product photography with minimalist aesthetic',
+    file: '/portfolio/images/clean-product-photography-minimalist.webp'
   },
   {
-    id: 'img-037',
+    id: 'creative-culinary',
     type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Luxury Product Showcase',
-    caption: 'Luxury product showcase',
-    file: '/portfolio/images/IMG_1457.jpeg'
+    category: 'Product Photography & Food Design',
+    title: 'Food Design Concept',
+    caption: 'Creative culinary visual with modern presentation',
+    file: '/portfolio/images/creative-culinary-visual-modern.webp'
   },
   {
-    id: 'img-038',
+    id: 'macro-product-photo',
     type: 'image',
-    category: 'Product Visualization & 3D',
-    title: '3D Product Render',
-    caption: '3D product rendering',
-    file: '/portfolio/images/IMG_1802.jpeg'
-  },
-  {
-    id: 'img-039',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Product Visualization Concept',
-    caption: 'Product visualization concept',
-    file: '/portfolio/images/91a32e1d-961f-4b1b-9264-b10fad83dd46.png'
-  },
-  {
-    id: 'img-040',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Product Design Showcase',
-    caption: 'Product design showcase',
-    file: '/portfolio/images/3cf19add-8cd9-4ab2-965f-7b269a45724e.jpeg'
-  },
-  {
-    id: 'img-041',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: '3D Visualization',
-    caption: '3D product visualization',
-    file: '/portfolio/images/IMG_7503.png'
-  },
-  {
-    id: 'img-042',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Photorealistic Render',
-    caption: 'Photorealistic product render',
-    file: '/portfolio/images/IMG_7486.png'
-  },
-  {
-    id: 'img-043',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Professional Rendering',
-    caption: 'Professional product rendering',
-    file: '/portfolio/images/IMG_7485.png'
-  },
-  {
-    id: 'img-044',
-    type: 'image',
-    category: 'Product Visualization & 3D',
-    title: 'Creative Cosmetics Visual',
-    caption: 'Creative cosmetics product visualization with surreal elements',
-    file: '/portfolio/images/Untitled2.jpg'
+    category: 'Product Photography & Food Design',
+    title: 'Product Detail Shot',
+    caption: 'Macro product photography with fine details',
+    file: '/portfolio/images/macro-product-photography-fine-details.webp'
   },
 
-  // Social Media Design (19 images)
+  // ========================================
+  // IMAGES - Social Media & Content
+  // ========================================
+
+  // Social Media & Content Design
   {
-    id: 'img-045',
+    id: 'social-post-01',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Media Post 01',
-    caption: 'Engaging social media post',
-    file: '/portfolio/images/IMG_7484.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 01',
+    caption: 'Eye-catching social media post design',
+    file: '/portfolio/images/eye-catching-social-media-post.webp'
   },
   {
-    id: 'img-046',
+    id: 'engaging-visual-content',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Media Post 02',
-    caption: 'Creative social media design',
-    file: '/portfolio/images/IMG_7482.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 02',
+    caption: 'Engaging visual content for digital platforms',
+    file: '/portfolio/images/engaging-visual-content-digital-platforms.webp'
   },
   {
-    id: 'img-047',
+    id: 'creative-social-graphic',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Media Post 03',
-    caption: 'Eye-catching social content',
-    file: '/portfolio/images/IMG_7481.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 03',
+    caption: 'Creative social media graphic with bold colors',
+    file: '/portfolio/images/creative-social-graphic-bold-colors.webp'
   },
   {
-    id: 'img-048',
+    id: 'modern-social-post',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Brand Design',
-    caption: 'Social media brand design',
-    file: '/portfolio/images/8FDD1A01-DC4C-40D8-A646-BA11D753D73E.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 04',
+    caption: 'Modern social post with clean composition',
+    file: '/portfolio/images/modern-social-post-clean-composition.webp'
   },
   {
-    id: 'img-049',
+    id: 'vibrant-social-visual',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Instagram Post Design',
-    caption: 'Instagram post design',
-    file: '/portfolio/images/9EC21AAF-D752-4419-B94B-9C5B5F907DDD.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 05',
+    caption: 'Vibrant social media visual with dynamic layout',
+    file: '/portfolio/images/vibrant-social-visual-dynamic-layout.webp'
   },
   {
-    id: 'img-050',
+    id: 'professional-social-content',
     type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Media Graphics',
-    caption: 'Social media graphics',
-    file: '/portfolio/images/F93DE054-50E4-4ED4-B950-AD2AAE2D70DE.png'
-  },
-  {
-    id: 'img-051',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Branded Social Content',
-    caption: 'Branded social content',
-    file: '/portfolio/images/071D8834-B120-479C-8212-1E33C06180F6.png'
-  },
-  {
-    id: 'img-052',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Marketing Design',
-    caption: 'Social media marketing design',
-    file: '/portfolio/images/4094C97D-6CE4-4659-ADF9-F0055FCFD782.png'
-  },
-  {
-    id: 'img-053',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Platform Content',
-    caption: 'Social platform content',
-    file: '/portfolio/images/4C3E36B6-FAED-46D6-9D02-407C4EC3A1EC.png'
-  },
-  {
-    id: 'img-054',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Viral Social Design',
-    caption: 'Viral social media design',
-    file: '/portfolio/images/3DFE04E1-3DEA-4C5A-83B9-D46D4900927A.png'
-  },
-  {
-    id: 'img-055',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Professional Social Graphics',
-    caption: 'Professional social graphics',
-    file: '/portfolio/images/FEE64AEA-D6C2-44DD-80C5-6AB52D48A7AB.png'
-  },
-  {
-    id: 'img-056',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Campaign Design',
-    caption: 'Social media campaign design',
-    file: '/portfolio/images/61542CE2-A237-44C8-9B52-4DE3AE06FF63.png'
-  },
-  {
-    id: 'img-057',
-    type: 'image',
-    category: 'Social Media Design',
-    title: '3D Social Media Branding',
-    caption: '3D social media design branding',
-    file: '/portfolio/images/pasted_file_ygCjJb_ChatGPTImageOct30,2025,02_39_24PM.png'
-  },
-  {
-    id: 'img-058',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Social Engagement CTA',
-    caption: 'Social engagement call-to-action design',
-    file: '/portfolio/images/pasted_file_KrcCFe_ChatGPTImageOct30,2025,02_39_22PM.png'
-  },
-  {
-    id: 'img-059',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Multi-Format Content Suite',
-    caption: 'Multi-format social media content suite',
-    file: '/portfolio/images/pasted_file_5GRC6f_ChatGPTImageOct30,2025,02_18_45PM.png'
-  },
-  {
-    id: 'img-060',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Coming Soon Announcement',
-    caption: 'Coming soon social announcement',
-    file: '/portfolio/images/pasted_file_yX2INV_ChatGPTImageOct30,2025,02_39_16PM.png'
-  },
-  {
-    id: 'img-061',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Upcoming Event Post',
-    caption: 'Upcoming event social post',
-    file: '/portfolio/images/pasted_file_hhtIvU_ChatGPTImageOct30,2025,02_39_13PM.png'
-  },
-  {
-    id: 'img-062',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Services Showcase Grid',
-    caption: 'Social media services showcase grid',
-    file: '/portfolio/images/pasted_file_Wm3bCt_ChatGPTImageOct30,2025,02_39_05PM.png'
-  },
-  {
-    id: 'img-063',
-    type: 'image',
-    category: 'Social Media Design',
-    title: 'Web UI Mockups',
-    caption: 'Website UI mockups for social presentation',
-    file: '/portfolio/images/pasted_file_mDsNzs_ChatGPTImageOct30,2025,02_19_11PM.png'
+    category: 'Social Media & Content Design',
+    title: 'Social Content 06',
+    caption: 'Professional social media content design',
+    file: '/portfolio/images/professional-social-content-design.webp'
   },
 
-  // Concept Art & Fantasy (16 images)
+  // ========================================
+  // IMAGES - AI Art & Portraits
+  // ========================================
+
+  // AI Character Design & 3D - Portraits
   {
-    id: 'img-064',
+    id: 'ai-portrait-01',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Digital Art 01',
-    caption: 'Creative digital artwork',
-    file: '/portfolio/images/DDFDCADF-6C5E-4C9C-BC59-6403A3161EE4.png'
+    category: 'AI Character Design & 3D',
+    title: 'Portrait Series 01',
+    caption: 'Professional AI-generated portrait with natural lighting',
+    file: '/portfolio/images/ai-portrait-natural-lighting-professional.webp'
   },
   {
-    id: 'img-065',
+    id: 'contemporary-portrait',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Digital Art 02',
-    caption: 'Artistic digital composition',
-    file: '/portfolio/images/669E7702-959F-42B6-968D-C15834506DD0.png'
+    category: 'AI Character Design & 3D',
+    title: 'Portrait Series 02',
+    caption: 'Contemporary portrait study with soft focus',
+    file: '/portfolio/images/contemporary-portrait-soft-focus.webp'
   },
   {
-    id: 'img-066',
+    id: 'artistic-portrait',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Creative Concept 01',
-    caption: 'Innovative creative concept',
-    file: '/portfolio/images/36D44C0D-057A-4E37-8834-80C22BBDA35B.png'
+    category: 'AI Character Design & 3D',
+    title: 'Portrait Series 03',
+    caption: 'Artistic portrait with dramatic composition',
+    file: '/portfolio/images/artistic-portrait-dramatic-composition.webp'
   },
   {
-    id: 'img-067',
+    id: 'minimalist-portrait',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Digital Art Showcase',
-    caption: 'Digital art showcase',
-    file: '/portfolio/images/DF619696-0A1E-48F6-9FD5-45E2B42C196F.png'
+    category: 'AI Character Design & 3D',
+    title: 'Portrait Series 04',
+    caption: 'Minimalist portrait with clean aesthetic',
+    file: '/portfolio/images/minimalist-portrait-clean-aesthetic.webp'
+  },
+
+  // AI-Generated Art & Illustrations
+  {
+    id: 'unique-ai-art',
+    type: 'image',
+    category: 'AI-Generated Art & Illustrations',
+    title: 'AI Art Creation 01',
+    caption: 'Unique AI-generated artistic composition',
+    file: '/portfolio/images/unique-ai-artistic-composition.webp'
   },
   {
-    id: 'img-068',
+    id: 'creative-ai-artwork',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Creative Visual Concept',
-    caption: 'Creative visual concept',
-    file: '/portfolio/images/F8E41881-64C8-4F36-9ABF-BB73B8335F56.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'AI Art Creation 02',
+    caption: 'Creative AI artwork with vibrant colors',
+    file: '/portfolio/images/creative-ai-artwork-vibrant-colors.webp'
   },
   {
-    id: 'img-069',
+    id: 'chatgpt-visual-01',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Contemporary Digital Art',
-    caption: 'Contemporary digital art',
-    file: '/portfolio/images/89115B17-B26F-40C4-93BF-6A484FDA350F.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 01',
+    caption: 'AI-generated visual from ChatGPT prompt engineering',
+    file: '/portfolio/images/chatgpt-visual-prompt-engineering.webp'
   },
   {
-    id: 'img-070',
+    id: 'chatgpt-creative-output',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Artistic Creative Direction',
-    caption: 'Artistic creative direction',
-    file: '/portfolio/images/F7A17083-B0B8-4D23-B40E-63CB2250DEB4.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 02',
+    caption: 'Creative AI output with artistic interpretation',
+    file: '/portfolio/images/chatgpt-creative-output-artistic.webp'
   },
   {
-    id: 'img-071',
+    id: 'chatgpt-unique-style',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Digital Creative Artwork',
-    caption: 'Digital creative artwork',
-    file: '/portfolio/images/ACC4948C-6698-43AE-A72C-BBCC04D8252A(1).png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 03',
+    caption: 'AI-generated concept with unique style',
+    file: '/portfolio/images/chatgpt-concept-unique-style.webp'
   },
   {
-    id: 'img-072',
+    id: 'chatgpt-engineered',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Fantasy Elephant Palace',
-    caption: 'Surreal fantasy scene with classical architecture',
-    file: '/portfolio/images/Untitled11.pngAA.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 04',
+    caption: 'Prompt-engineered AI artwork',
+    file: '/portfolio/images/chatgpt-prompt-engineered-artwork.webp'
   },
   {
-    id: 'img-073',
+    id: 'chatgpt-illustration',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Tree Guardian Warrior',
-    caption: 'Epic fantasy character design',
-    file: '/portfolio/images/GEOO.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 05',
+    caption: 'AI-generated illustration with creative direction',
+    file: '/portfolio/images/chatgpt-illustration-creative-direction.webp'
   },
   {
-    id: 'img-074',
+    id: 'chatgpt-text-to-image',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Whimsical Fantasy Portrait',
-    caption: 'Whimsical fantasy portrait with mystical companion',
-    file: '/portfolio/images/Untitled12.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 06',
+    caption: 'Advanced AI artwork from text prompts',
+    file: '/portfolio/images/chatgpt-advanced-text-to-image.webp'
   },
   {
-    id: 'img-075',
+    id: 'chatgpt-professional',
     type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'AI Technology Concept',
-    caption: 'AI technology concept art - Futuristic digital face',
-    file: '/portfolio/images/AIsoftwareforfreeaccess.jpg'
-  },
-  {
-    id: 'img-076',
-    type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Ethereal Peacock Garden',
-    caption: 'Ethereal fantasy scene with illuminated peacock',
-    file: '/portfolio/images/Untitled.pngHDHDH.png'
-  },
-  {
-    id: 'img-077',
-    type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Futuristic Cat Warrior',
-    caption: 'Sci-fi concept art with futuristic cityscape',
-    file: '/portfolio/images/Untitled.pngCC.png'
-  },
-  {
-    id: 'img-078',
-    type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Sci-Fi Interior Design',
-    caption: 'Futuristic sci-fi interior design concept',
-    file: '/portfolio/images/WQ.png'
-  },
-  {
-    id: 'img-079',
-    type: 'image',
-    category: 'Concept Art & Fantasy',
-    title: 'Advanced Spacecraft',
-    caption: 'Advanced spacecraft concept design',
-    file: '/portfolio/images/WSW.png'
+    category: 'AI-Generated Art & Illustrations',
+    title: 'ChatGPT Visual 07',
+    caption: 'Professional AI-generated visual content',
+    file: '/portfolio/images/chatgpt-professional-visual-content.webp'
   }
 ];
 
 // Statistics
-export const statistics = {
-  projects_completed: 85,
-  clients_count: 45,
-  years_experience: 3,
-  client_satisfaction_percent: 98,
-  on_time_delivery_percent: 96,
-  countries_served: 9,
-  avg_turnaround_days: 6
-};
+export const statistics = [
+  { value: '50+', label: 'Projects Completed' },
+  { value: '30+', label: 'Happy Clients' },
+  { value: '10+', label: 'Industry Awards' },
+  { value: '100%', label: 'Client Satisfaction' },
+];
 
-// Workflow
+// Testimonials
+export const testimonials = [
+  {
+    name: 'Sarah Johnson',
+    role: 'CEO, KOVA Cosmetics',
+    text: 'Working with DANVERSE was a game-changer. Their ability to blend creative vision with AI-powered strategy delivered results that exceeded all our expectations.',
+    image: '/images/testimonials/sarah.jpg',
+  },
+  {
+    name: 'Michael Chen',
+    role: 'Marketing Director, TechCorp',
+    text: 'The 3D web experiences DANVERSE created for our landing pages increased our conversion rate by 47%. Their understanding of both aesthetics and user experience is exceptional.',
+    image: '/images/testimonials/michael.jpg',
+  },
+  {
+    name: 'Emma Rodriguez',
+    role: 'Creative Director, BrandLab',
+    text: 'DANVERSE brought our brand vision to life with stunning cinematic ads. Their fast turnaround and attention to detail made the entire process seamless.',
+    image: '/images/testimonials/emma.jpg',
+  },
+];
+
+// Workflow steps
 export const workflow = [
   {
-    step: 1,
-    title: 'Discovery',
-    description: 'Goals, audience, constraints, KPIs, timing.'
+    step: '01',
+    title: 'Discovery & Strategy',
+    description: 'We dive deep into your brand, goals, and target audience to craft a strategic creative direction.',
   },
   {
-    step: 2,
-    title: 'Strategy',
-    description: 'Core concept, message map, creative direction.'
+    step: '02',
+    title: 'Concept Development',
+    description: 'Our team develops innovative concepts leveraging AI tools and creative expertise.',
   },
   {
-    step: 3,
-    title: 'Storyboard & Previz',
-    description: 'Micro-storyboard and quick previz for look & feel alignment.'
+    step: '03',
+    title: 'Production & Creation',
+    description: 'We bring concepts to life with cutting-edge production techniques and AI-powered workflows.',
   },
   {
-    step: 4,
-    title: 'Production',
-    description: 'Asset creation/shoot plan, efficient takes, capture.'
+    step: '04',
+    title: 'Refinement & Delivery',
+    description: 'We refine every detail and deliver polished, production-ready assets that exceed expectations.',
   },
-  {
-    step: 5,
-    title: 'Edit & Color',
-    description: 'Tight edit, sound polish, cinematic color treatment.'
-  },
-  {
-    step: 6,
-    title: 'Delivery & Launch',
-    description: 'Final masters in required ratios + branded end-frames.'
-  },
-  {
-    step: 7,
-    title: 'Iterate (30-Day Optimization)',
-    description: 'Performance read, light tweaks, rollout notes.'
-  }
 ];
 
 // Education & Certifications
 export const educationCertifications = [
   {
-    title: 'Google for Education — Gemini Certified Educator',
-    issuer: 'Google for Education',
-    issued_on: '2025-10-26',
-    valid_through: '2028-10-25',
-    status: 'issued',
-    verification_status: 'pending'
+    title: 'AI for Good Sandbox',
+    organization: 'United Nations',
+    year: '2025',
+    description: 'Selected for participation in the AI for Good Sandbox initiative.',
   },
   {
-    title: 'startAD "AI for Good" Sandbox — Participant (UAE)',
-    issuer: 'startAD (NYU Abu Dhabi)',
-    year: 2025,
-    status: 'submitted & reviewed',
-    verification_status: 'pending'
+    title: 'Advanced Prompt Engineering',
+    organization: 'OpenAI',
+    year: '2024',
+    description: 'Certification in advanced prompt engineering for image, video, and text generation.',
   },
   {
-    title: 'Metaverse Award — Best 3D Generative Visual Design (Middle East)',
-    issuer: 'Regional Award Program',
-    year: 2025,
-    status: 'awarded',
-    verification_status: 'pending'
-  }
-];
-
-// Testimonials (keeping existing ones from owner.json)
-export const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    role: 'Marketing Director',
-    company: 'TechVision Inc',
-    content: 'Working with Mohamed was exceptional. His AI-powered creative direction transformed our brand identity completely.',
-    rating: 5
+    title: 'Creative Direction & Strategy',
+    organization: 'Self-Taught',
+    year: '2020-2025',
+    description: 'Continuous learning through real-world projects and industry experience.',
   },
-  {
-    name: 'Michael Chen',
-    role: 'CEO',
-    company: 'Digital Innovations',
-    content: 'The cinematic quality and attention to detail in every project exceeded our expectations. Highly recommended!',
-    rating: 5
-  },
-  {
-    name: 'Emma Williams',
-    role: 'Creative Lead',
-    company: 'Brand Studio',
-    content: 'Mohamed\'s expertise in AI-generated content and 3D visualization brought our vision to life perfectly.',
-    rating: 5
-  }
 ];
