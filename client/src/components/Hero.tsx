@@ -24,9 +24,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D2D64A]/10 border border-[#D2D64A]/30 mb-6">
+              <Sparkles className="w-4 h-4 text-[#D2D64A]" />
+              <span className="text-sm text-[#D2D64A] font-medium">
                 AI-Powered Creative Direction
               </span>
             </div>

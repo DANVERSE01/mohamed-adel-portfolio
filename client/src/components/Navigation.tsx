@@ -45,8 +45,8 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <img loading="lazy" 
-              src="/logo-ma-arabic-v2.png" 
-              alt="Mohamed Adel Logo" 
+              src="/brand/logo_primary_monogram_wordmark.png" 
+              alt="DANVERSE Logo" 
               className="h-8 md:h-10 w-auto transition-transform group-hover:scale-110"
             />
             <div className="hidden sm:flex flex-col">

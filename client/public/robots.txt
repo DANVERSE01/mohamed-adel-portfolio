@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mohamed-adel-portfolio.netlify.app/sitemap.xml
+Sitemap: https://danverse.ai/sitemap.xml
 
 # Disallow admin or private paths (if any)
 # Disallow: /admin/

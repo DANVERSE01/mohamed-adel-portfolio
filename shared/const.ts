@@ -4,7 +4,7 @@ import { Sparkles, Video, Palette, Box, Wand2, Film } from "lucide-react";
 export const ONE_YEAR_MS = 1000 * 60 * 60 * 24 * 365;
 
 export const APP_TITLE = "DANVERSE - Global AI-Powered Creative Studio";
-export const APP_LOGO = "/images/headshot.jpg";
+export const APP_LOGO = "/brand/logo_icon_monogram_only.png";
 
 export const OWNER = {
   fullName: "DANVERSE",
