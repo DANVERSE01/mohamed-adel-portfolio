@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 
 // Lazy load other pages for code splitting
 const Work = lazy(() => import("./pages/Work"));
+const AI = lazy(() => import("../../src/pages/AI")); // AI.jsx is in the root src/pages, not client/src/pages
 const Services = lazy(() => import("./pages/Services"));
 const About = lazy(() => import("./pages/About"));
 const Awards = lazy(() => import("./pages/Awards"));
@@ -38,7 +39,8 @@ function Router() {
       <main className="flex-1 pt-20">
         <Suspense fallback={<PageLoader />}>
           <Switch>
-            <Route path={"/"} component={Home} />
+	            <Route path={"/"} component={Home} />
+	            <Route path="/ai" component={AI} />
             <Route path="/work" component={Work} />
             <Route path="/work/:id" component={ProjectDetail} />
             <Route path="/services" component={Services} />

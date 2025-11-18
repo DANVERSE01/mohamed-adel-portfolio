@@ -199,3 +199,26 @@ If you encounter any issues or have questions, please open an issue on GitHub.
 ---
 
 **Made with ❤️ and AI**
+
+## 🤖 DANVERSE AI Chat Feature
+
+This portfolio now includes an interactive AI image generation feature accessible at the `/ai` route. This feature allows users to generate hyper-realistic advertising images using a secure Cloudflare Worker proxy to the Fal.ai Flux Pro model.
+
+### 🚀 Key Features & Optimizations
+
+*   **Code Splitting:** The AI component is lazy-loaded to prevent performance degradation on the main pages.
+*   **Image Lazy Loading:** Generated images use a custom `ImageLoader` component with a loading placeholder to improve perceived performance (TTI/FCP).
+*   **Secure Proxy (Cloudflare Worker):**
+    *   **Origin Check:** Only requests from `https://danverse.ai` are permitted.
+    *   **Rate Limiting:** Implements a basic rate limit (200 requests/minute per IP) using a Cloudflare KV Namespace (`RATE_LIMITER`) to prevent abuse.
+    *   **Content Filtering:** Basic filtering for banned keywords (nude, sex, bomb, etc.).
+
+### ⚙️ Deployment Instructions for the Worker
+
+The code for the secure proxy is located at `danverse-ai-chat/danverse-proxy.js`. To deploy it:
+
+1.  **Create a Cloudflare Worker:** Deploy the code in `danverse-ai-chat/danverse-proxy.js` to a new Cloudflare Worker.
+2.  **Set Environment Variables:**
+    *   **Secret:** Set a secret environment variable named `FAL_API_KEY` with your Fal.ai API key.
+    *   **KV Binding:** Bind a KV Namespace to the Worker with the name `RATE_LIMITER` (this is required for the rate limiting feature).
+3.  **Update Frontend:** After deployment, update the `proxyUrl` variable in `src/pages/AI.jsx` (around line 36) with the actual URL of your deployed Worker.
