@@ -1,0 +1,61 @@
+# Add these dependencies to your package.json:
+
+## Production Dependencies
+```json
+{
+  "dependencies": {
+    "web-vitals": "^4.2.4",
+    "@google/generative-ai": "^0.21.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.114.3",
+    "@react-three/postprocessing": "^2.16.3",
+    "postprocessing": "^6.36.2",
+    "three": "^0.169.0",
+    "gsap": "^3.12.5"
+  }
+}
+```
+
+## Dev Dependencies
+```json
+{
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "@types/gtag.js": "^0.0.20"
+  }
+}
+```
+
+## Installation Commands
+
+### Option 1: Install all at once (Recommended)
+```bash
+pnpm add web-vitals @google/generative-ai @react-three/fiber @react-three/drei @react-three/postprocessing postprocessing three gsap
+pnpm add -D @types/three @types/gtag.js
+```
+
+### Option 2: Install individually
+```bash
+# Core Performance
+pnpm add web-vitals
+
+# AI
+pnpm add @google/generative-ai
+
+# 3D
+pnpm add @react-three/fiber @react-three/drei @react-three/postprocessing postprocessing three
+pnpm add -D @types/three
+
+# Animations
+pnpm add gsap
+
+# Analytics Types
+pnpm add -D @types/gtag.js
+```
+
+## Verification
+
+After installation, verify in your package.json:
+```bash
+pnpm list web-vitals three gsap
+```
