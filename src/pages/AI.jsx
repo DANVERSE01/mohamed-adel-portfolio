@@ -24,7 +24,7 @@ const ImageLoader = ({ src, alt }) => {
 export default function DANVERSEAI() {
 
   const [messages, setMessages] = useState([
-    { type: 'bot', text: 'Welcome to DANVERSE AI ™<br>Describe any ad — I’ll create a hyper-realistic masterpiece in seconds.' }
+    { type: 'bot', text: 'Welcome to DANVERSE AI ™<br>Describe any ad — I\'ll create a hyper-realistic masterpiece in seconds.' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -52,7 +52,7 @@ export default function DANVERSEAI() {
     try {
       // هام: استبدل الرابط بالرابط الفعلي لـ Cloudflare Worker الخاص بك بعد النشر
       // يجب أن يكون الرابط هو: https://danverse-proxy.اسمك.workers.dev/generate
-      const proxyUrl = 'https://danverse-proxy.your-worker-name.workers.dev/generate'; 
+      const proxyUrl = import.meta.env.VITE_CLOUDFLARE_WORKER_URL || 'https://danverse-proxy.your-worker-name.workers.dev/generate'; 
       
       const res = await fetch(proxyUrl, {
         method: 'POST',
@@ -71,7 +71,6 @@ export default function DANVERSEAI() {
         // Fetch Optimization: Use ImageLoader component for better perceived performance
         return [...newMessages, { type: 'bot', text: `<ImageLoader src="${data.image_url}" alt="${userMsg}" />` }];
       });
-      });
 
     } catch (error) {
       console.error(error);
@@ -86,48 +85,6 @@ export default function DANVERSEAI() {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4 font-['Orbitron']">
-      <div className="w-full max-w-2xl bg-gradient-to-b from-black/90 to-purple-900/20 rounded-3xl border-4 border-cyan-400 shadow-2xl shadow-cyan-500/50 backdrop-blur-xl">
-        <div className="bg-gradient-to-r from-cyan-400 to-purple-600 p-6 rounded-t-3xl text-center">
-          <h1 className="text-4xl font-black text-black">DANVERSE AI ™</h1>
-        </div>
-        <div className="h-96 overflow-y-auto p-6 space-y-6" style={{ scrollbarColor: '#00ffff #000' }}>
-          {messages.map((m, i) => (
-            <div key={i} className={`flex ${m.type === 'user' ? 'justify-end' : 'justify-start'}`}>
-              <div 
-                className={`max-w-xs lg:max-w-md px-6 py-4 rounded-3xl ${m.type === 'user' ? 'bg-yellow-400 text-black' : 'bg-black/70 border-2 border-cyan-400 text-cyan-300'}`}
-              >
-                {m.text.startsWith('<ImageLoader') ? (
-                  <ImageLoader src={m.text.match(/src="([^"]*)"/)[1]} alt={m.text.match(/alt="([^"]*)"/)[1]} />
-                ) : (
-                  <span dangerouslySetInnerHTML={{ __html: m.text }} />
-                )}
-              </div>
-            </div>
-          ))}
-          <div ref={messagesEndRef} />
-        </div>
-        <div className="p-6 flex gap-4">
-          <input
-            type="text"
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            onKeyPress={e => e.key === 'Enter' && generate()}
-            placeholder="iPhone 16 Pro on luxury yacht at sunset..."
-            className="flex-1 bg-black/80 border-2 border-cyan-400 rounded-full px-8 py-5 text-white text-lg outline-none focus:border-yellow-400 transition-all"
-            disabled={isLoading}
-          />
-          <button onClick={generate} className="bg-cyan-400 text-black w-16 h-16 rounded-full text-3xl font-bold hover:bg-yellow-400 hover:scale-110 transition-all shadow-lg shadow-cyan-500/50" disabled={isLoading}>
-            {isLoading ? '...' : '➤'}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-// The component is now ready to be imported and used directly in the main router file (e.g., App.jsx)
-// The lazy loading is handled by the component itself, but the export is now the component itself
-// to simplify Wouter routing.
       <div className="w-full max-w-2xl bg-gradient-to-b from-black/90 to-purple-900/20 rounded-3xl border-4 border-cyan-400 shadow-2xl shadow-cyan-500/50 backdrop-blur-xl">
         <div className="bg-gradient-to-r from-cyan-400 to-purple-600 p-6 rounded-t-3xl text-center">
           <h1 className="text-4xl font-black text-black">DANVERSE AI ™</h1>
